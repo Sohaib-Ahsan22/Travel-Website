@@ -34,7 +34,7 @@ body {
 
 .nav-logo {
   float: left;
-  width: 33.33%;
+  width: 30%;
   font-size: larger;
   cursor: pointer;
   margin-top: 0.5rem;
@@ -114,7 +114,7 @@ body {
   margin: auto;
   padding: 20% 0;
   right: 36vw;
-  width: 25%;
+  max-width: max-content;
   text-align: center;
 }
 
@@ -149,7 +149,7 @@ p {
 }
 
 .content {
-  width: 20%;
+  max-width: 18em;
   margin-top: 5rem;
   margin: 5rem 10%;
 }
@@ -193,7 +193,7 @@ p {
 .cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .card-1 {
@@ -289,9 +289,10 @@ p {
 }
 .hamburger-menu i {
   position: absolute;
-  right: 2rem;
-  top: 0.2rem;
+  right: 1rem;
+  top: 0.5rem;
   color: white;
+  font-size: x-large;
 }
 .hamburger-menu .menu-items {
   display: none;
@@ -328,8 +329,17 @@ p {
   .nav-btn {
     margin-right: 1.5rem;
   }
+  .btn {
+    font-size: x-small;
+    margin-top: 0.7rem;
+    margin-left: 5px;
+  }
+  .btn-2 {
+    margin-right: 1.5rem;
+  }
   .nav-logo {
     width: 20%;
+    margin-left: 2rem;
   }
 }
 
