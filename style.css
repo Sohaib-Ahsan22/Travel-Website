@@ -1,0 +1,340 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+body {
+  background-color: #f4f4f4;
+}
+
+.hero-image {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("./hero.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: sticky;
+  max-height: max-content;
+}
+.hero-image::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.container {
+  width: 100%;
+  height: 2.5rem;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+}
+
+.nav-logo {
+  float: left;
+  width: 33.33%;
+  font-size: larger;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  margin-left: 3rem;
+}
+
+.nav-logo a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-items {
+  float: left;
+  width: 33.33%;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+.nav-item {
+  display: inline-block;
+  list-style: none;
+  margin-right: 1.5rem;
+}
+.nav-item a:hover {
+  border-bottom: 1px solid white;
+}
+
+.nav-items a {
+  text-decoration: none;
+  font-size: small;
+  color: white;
+}
+
+.nav-btn {
+  float: right;
+}
+
+.btn {
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: small;
+  margin-top: 0.5rem;
+  margin-left: 10px;
+}
+
+.btn-1 {
+  background-color: rgba(194, 194, 194, 0.6);
+  border-radius: 50px;
+  padding: 5px 20px;
+  color: black;
+  transition: transform 0.2s;
+}
+
+.btn-1:hover {
+  background-color: rgba(139, 138, 138, 0.6);
+
+  transform: scale(1.05);
+}
+
+.btn-2 {
+  background-color: black;
+  border-radius: 50px;
+  padding: 5px 20px;
+  margin-right: 3rem;
+  transition: transform 0.2s;
+}
+.btn-2:hover {
+  background-color: rgb(12, 12, 12);
+  color: rgb(222, 222, 222);
+
+  transform: scale(1.05);
+}
+
+.hero-content {
+  margin: auto;
+  padding: 20% 0;
+  right: 36vw;
+  width: 25%;
+  text-align: center;
+}
+
+.hero-content h1,
+p {
+  color: white;
+}
+.hero-content h1 {
+  margin-bottom: 1rem;
+  line-height: 2rem;
+}
+
+.hero-content p {
+  font-size: small;
+}
+
+.hero-content button {
+  background-color: transparent;
+  border-radius: 50px;
+  padding: 10px 40px;
+  border: 2px solid rgb(174, 174, 174);
+  font-size: medium;
+  transition: transform 0.2s;
+}
+
+.hero-content button:hover {
+  background-color: black;
+  border-radius: 50px;
+  padding: 10px 40px;
+  border: 2px solid rgb(174, 174, 174);
+  transform: scale(1.05);
+}
+
+.content {
+  width: 20%;
+  margin-top: 5rem;
+  margin: 5rem 10%;
+}
+
+.content h1 {
+  font-size: xx-large;
+  margin-bottom: 1rem;
+}
+
+.content h1 span {
+  color: orange;
+}
+
+.content p {
+  color: black;
+  font-size: small;
+  margin-bottom: 1rem;
+}
+
+.content button i {
+  color: white;
+}
+.content button {
+  border: none;
+  color: white;
+  background-color: black;
+  border-radius: 50px;
+  padding: 5px 20px;
+  transition: transform 0.3s;
+}
+
+.content button:hover {
+  opacity: 0.8;
+  transform: scale(1.05);
+}
+
+.cards-container {
+  margin: 5rem 10%;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card-1 {
+  width: 13rem;
+  margin: 1% 1%;
+  background-color: white;
+  border-radius: 10px;
+  padding-bottom: 1rem;
+  overflow: hidden;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s;
+}
+.card-1:hover {
+  transform: scale(1.05);
+}
+
+.card-1 img {
+  width: 100%;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.card-detail {
+  margin-left: 1.5rem;
+}
+
+.card-1 h2 {
+  margin-bottom: 1rem;
+  max-width: max-content;
+}
+
+.card-1 .rating i {
+  color: rgb(216, 140, 0);
+}
+
+.card-1 .rating span {
+  margin-left: 0.5rem;
+  font-weight: 700;
+}
+
+.location {
+  margin-top: 0.7rem;
+}
+.location span {
+  font-size: small;
+  font-weight: 700;
+}
+
+.price {
+  margin-top: 0.7rem;
+}
+.price p {
+  color: black;
+}
+
+.price p strong {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.footer {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.footer .fb {
+  color: rgb(0, 59, 154);
+}
+
+.footer .insta {
+  color: rgb(244, 78, 194);
+}
+
+.footer .linked {
+  color: rgb(2, 81, 209);
+}
+
+.footer p {
+  color: black;
+  font-size: smaller;
+  margin-top: 0.5rem;
+}
+
+/* screen media */
+
+.hamburger-menu {
+  float: right;
+  display: none;
+}
+.input-checkbox {
+  display: none;
+}
+.hamburger-menu i {
+  position: absolute;
+  right: 2rem;
+  top: 0.2rem;
+  color: white;
+}
+.hamburger-menu .menu-items {
+  display: none;
+  list-style: none;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  top: 2.5rem;
+  right: 0;
+  left: 0;
+  text-align: center;
+}
+.menu-item a {
+  text-decoration: none;
+  color: white;
+  width: 100%;
+  display: block;
+}
+.menu-item a:hover {
+  color: rgb(199, 199, 199);
+}
+
+.menu-item {
+  margin: 0.5rem 1rem;
+}
+
+.input-checkbox:checked ~ .menu-items {
+  display: block;
+}
+
+@media (max-width: 860px) {
+  .nav-items {
+    display: none;
+  }
+  .nav-btn {
+    margin-right: 1.5rem;
+  }
+  .nav-logo {
+    width: 20%;
+  }
+}
+
+@media (max-width: 860px) {
+  .hamburger-menu {
+    display: block;
+  }
+}
