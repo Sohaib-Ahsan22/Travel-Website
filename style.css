@@ -15,7 +15,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   position: sticky;
-  max-height: max-content;
+  height: 100VH;
 }
 .hero-image::after {
   content: "";
@@ -112,8 +112,7 @@ body {
 
 .hero-content {
   margin: auto;
-  padding: 20% 0;
-  right: 36vw;
+  padding: 45vh 0;
   max-width: max-content;
   text-align: center;
 }
@@ -193,12 +192,12 @@ p {
 .cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-evenly
 }
 
 .card-1 {
   width: 13rem;
-  margin: 1% 1%;
+  margin: 2rem 2rem;
   background-color: white;
   border-radius: 10px;
   padding-bottom: 1rem;
@@ -340,6 +339,14 @@ p {
   .nav-logo {
     width: 20%;
     margin-left: 2rem;
+  }
+  .card-1{
+    width:10rem;
+  }
+}
+@media (max-width: 560px) {
+  .card-1{
+    width:100%;
   }
 }
 
